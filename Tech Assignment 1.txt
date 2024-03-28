@@ -1,0 +1,48 @@
+Assignment :
+------------------
+Identify the attributes and behaviours of these class - Bank
+      Attributes(properties)                Behaviors(Methods)
+
+      1)AccountholderName                  1)GetBankAccountholderName()
+      2)AccountNumber                      2)GetAccountNumber()
+      3)IFSCcode                           3)GetIfscCode()
+      4)Address                            4)GetBankBranch()
+      5)Bank branch                        5)GetBankName()
+      6)BankName                       
+      7)Employess                          
+                                
+             
+
+<=========================================================================>+
+Identify the attributes and behaviours of these class - University 
+
+      Attributes(properties)                Behaviors(Methods)
+
+      1)StudentID                             1)EnrollStudents()
+      2)student names                        2)getstudentNames()
+      3)Department                           3)getfacultylist()
+      4)Ranking                              4)getcourses()
+      5)Faculty Members                      5)getRank()
+      6)Branch                               6)getBranch()
+
+
+
+Identify the attributes and behaviours of these class - Therate
+      Attributes(properties)                Behaviors(Methods)
+
+      1)Theatername                         1)getticket()
+      2)seatno                              2)getseatno()
+      3)MovieName                           3)getMovieName()
+      4)theatertypes                       4)gettheatertypes()
+      5)ticket                              
+      
+
+Identify the attributes and behaviours of these class - Radio
+      Attributes(properties)                Behaviors(Methods)
+
+      1)RadioBattery                         1)GetValume()
+      2)Volume                               2)GetModel
+      3)Antenna                              3)GetColor()
+      4)model                                4)GetRadioBattery()
+      5)colour                              
+      
