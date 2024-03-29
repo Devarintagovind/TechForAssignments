@@ -1,0 +1,223 @@
+1)==>Writing an algorithm for driving from my place to fav destination(Hyd to Mumbai)
+
+1)Plan your Route:-
+*Use a Mapping service or GPS device to determine the best route from Hyd to Mumbai.
+*Consider factor such as distance ,road conditions and traffic.
+
+2)Prepare Your Vehicle:
+*Check Your vehicle is in good condition for a long journey.
+*Check the fuel level,oiltires,brakes and etc...
+
+3)Pack Essentials:
+*it means such as water,snacks,first aid kit,neccesary documents (license,Registration papers,insurence) and emergency supplies.
+
+4)Start journey:
+*Depart from your location in hyderabad and follow the planned route towards mumbai.
+
+5)Follow Traffic Rules:
+*Obey the traffic rules,speed limits,and other traffic rule to ensure a safe journey.
+
+6)Drive Safely:
+*Maintain a safe speed and distance from the other vehicles and use turn signal and mirrors when changing turning.
+
+7)Tea Break:
+*Take regular breaks to rest,stretch,and refresh yourself to get an energy.
+
+8)Fuel and mileage:
+*Keep an eye on your fuel gauge and plan fuel stops accordingly and calucate the mileage to have sufficient fuel for the journey.
+
+9)Navigate Road challenges:
+*Be prepared for road diversions
+
+10)Arrival in Mumbai:
+*Follow directions to your specific destination within the city if needed.
+
+11)End of journey:
+*Once you reach the destination ,park your vehicle safely.
+
+12)Return Journey(Optional)
+
+================================================================
+
+2===>Writing an algorithm for Registering & logging into website.
+
+Registraion Algorith:
+
+1)User Input:
+
+*The user to provide necessary information for registration such as username, email address, password, etc.
+
+2)Validate Input:
+
+*Verify that all required fields are filled out.
+*Check for valid email format.
+*Ensure password meets security requirements (e.g., minimum length, containing both letters and numbers).
+
+3)Check for Duplicate Entries:
+*Verify that the username and email address provided are not already registered in the system.
+*If duplicates are found, prompt the user to choose different credentials.
+
+
+4)Store User Information:
+
+*If input passes validation and no duplicates are found, store the user's information in the database.
+
+5)Confirmation:
+
+*Provide confirmation to the user that registration was successful.
+*Optionally, send a confirmation email for account activation.
+
+6)Login Algorithm:
+
+1)User Input:
+
+*enter the username/email and password.
+
+2)Validate Input:
+
+*Verify that both fields are filled out.
+
+3)Check Credentials:
+
+*Retrieve the user's information from the database based on the provided username/email.
+*If credentials match, proceed to login. If not, prompt the user to re-enter correct credentials.
+
+4)Session Creation:
+
+*Upon successful login, create a session for the user to maintain their logged-in state.
+*Store session information (e.g., user ID, username) securely.
+
+5)Redirect or Display Dashboard:
+
+*Redirect the user to the appropriate page (e.g., dashboard, homepage) after successful login.
+
+*Display a welcome message or user-specific content.
+
+
+6)Logout Option:
+
+*Provide an option for the user to logout, which destroys the session and logs them out of the website.
+
+=============================================================
+
+3==>Writing an algorithm to check if a number is negative number or positive number
+
+1)Input a number from the user.
+2)If number is less than zero, then it is a negative integer.
+3)Else if number is greater than zero, then it is a positive integer.
+4)Else, the number is equal to zero.
+5)End.
+
+==============================================================
+
+4==>Writing an algorithm to check if a number is prime
+
+1: Take num as input. 
+2: Initialize a variable temp to 1.
+3: Iterate a “for” loop from 2 to sqrt(num).
+4: If num is divisible by loop iterator, then update temp value to 0
+
+===============================================================
+
+5==>Writing an algorithm to check if a number is amstrong
+
+1:Enter any Number
+
+2: Find the cube of each digit of the entered number.
+
+3: Then, add the cube of all the digits.
+
+4: If the result of step 3 is equal to the entered number, i.e., Step 1. Then the print entered number is an Armstrong number.
+
+5: If the result of step 3 is equal to the entered number, i.e., Step 1. Then print entered number is not an Armstrong number.
+
+===============================================================
+
+6==>Writing an algorithm to check if a year is leap year or not.
+
+1-Take an integer variable
+
+2- Assign values to the variable
+
+3- Check whether a year is divisible by four but not with hundred and print leap year.
+
+4- Check if a year is divisible by four hundred and print leap year
+
+5- Otherwise, print not leap year
+
+================================================================
+
+7====Writing an algorithm to find n factorial of a number
+
+1.We initialize the result variable to 1, as 1! is defined as 1.
+2.Starting from 2, we iterate through all the integers up to n .
+3.In each iteration, we multiply the result by the current integer i .
+4.Finally, we return the result as the factorial of n .
+
+================================================================
+
+8===>
+
+1.START
+2. Declare variable n1, n2, sum, n, i 
+*Initialize variables: n1 = 0, n2 = 1, i = 2 
+3.Read n 
+4: Repeat this step until i <= n: 
+
+sum = n1 + n2 
+print sum 
+n1 = n2 
+n2 = sum 
+i = i + 1
+5: STOP 
+
+========================================================
+
+9==
+
+1. Start
+
+2. Read the value of start_position and end_position
+
+3. Initialize an empty list even_numbers[] to store even numbers
+
+4. For each index i from start_position to end_position, do
+      4.1 If array[i] is divisible by 2 with remainder 0, then
+             4.1.1 Append array[i] to even_numbers[]
+
+5. If even_numbers[] is not empty, then
+      5.1 Print "Even numbers between position {start_position} and position {end_position} are: "
+      5.2 For each number in even_numbers[], do
+             5.2.1 Print the number
+      5.3 Go to step 6
+   Else
+      5.4 Print "No even numbers found between position {start_position} and position {end_position}"
+
+6. Stop
+
+================================================================
+
+10==Writing an algorithm to find the sum of sub-array you pick dynamically should be greater than 10 and copy those values (not the sum) into another array.
+
+
+1. Start
+
+2. Initialize an empty list new_array[] to store values of sub-arrays with a sum greater than 10
+
+3. For each starting index i from 0 to the length of the array - 1, do
+      3.1 Initialize sum = 0
+      3.2 For each ending index j from i to the length of the array - 1, do
+             3.2.1 Add array[j] to sum
+             3.2.2 If sum is greater than 10, then
+                       3.2.2.1 Append array[i:j+1] to new_array[] (copy the values of the sub-array)
+                       3.2.2.2 Break out of the loop
+
+4. If new_array[] is not empty, then
+      4.1 Print "Sub-arrays with a sum greater than 10:"
+      4.2 For each sub-array in new_array[], do
+             4.2.1 Print the values of the sub-array
+      4.3 Go to step 5
+   Else
+      4.4 Print "No sub-array found with a sum greater than 10"
+
+5. Stop
