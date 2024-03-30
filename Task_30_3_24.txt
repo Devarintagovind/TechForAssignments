@@ -1,0 +1,25 @@
+
+checking for the possibilities in Main()
+
+
+1.Writing a main() method without passing arg
+
+ public static void main()
+ 
+ Error===This genarates Main method not found in class compiler error
+
+================================================================
+2.static public void main(String[] args)==Succesfully executes
+
+Error=No 
+
+==============================================================
+3.public static void main(String... args)==Succesfully executes
+
+Error=No because using Var-Args instead of the array(Here dots represents array)
+================================================================================
+4.public static main(String[] args)==
+
+Error==Because if we do not give it a void return type, the JVM will be unable to run it and will produce an error
+
+
