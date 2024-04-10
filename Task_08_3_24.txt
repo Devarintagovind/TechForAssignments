@@ -1,0 +1,132 @@
+Task1:Write a Java program to create and display a unique three-digit number using 1, 2, 3, 4. Also count how many three-digit numbers are there.
+
+package PracticingPrograms;
+
+public class CountNumOfDigits {
+
+	public static void main(String[] args) {
+	
+		
+		        int[] digits = {1,2,3,4};
+		        int count = 0;
+		        
+		        System.out.println("Unique Three-Digit Numbers:");
+
+		          for (int hundreds : digits) {
+		            for (int tens : digits) {
+		                if (tens == hundreds) continue; // Skip if tens place is the same as hundreds
+
+		                for (int units : digits) {
+		                    if (units == hundreds || units == tens) continue; // Skip if units place is same as hundreds or tens
+
+		                    // Form the three-digit number
+		                    int number = hundreds * 100 + tens * 10 + units;
+
+		                    // Display the number
+		                    System.out.print(number + " ");
+		                    count++;
+		                }
+		            }
+		        }
+
+		        System.out.println(); // Move to the next line
+		        System.out.println("Total count of unique three-digit numbers: " + count);
+		
+		
+	}
+	}
+
+
+Output:Unique Three-Digit Numbers:
+123 124 132 134 142 143 213 214 231 234 241 243 312 314 321 324 341 342 412 413 421 423 431 432 
+Total count of unique three-digit numbers: 24
+=================================================================================================================================================================================
+
+Task2:Write a Java program to print odd numbers from 1 to 99. Prints one number per line.
+
+public class oddNumbers {
+    public static void main(String[] args) {
+        for (int i = 2; i   <= 99; i +=2) {
+            System.out.println(i);
+        }
+    }
+}
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+===================================================================================================================================================================================
+
+Task3:
+
+
+
+public class Number_Sum {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a number
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+
+        // Compute the value of n + nn + nnn
+        int nn = n * 10 + n;
+        int nnn = n * 100 + nn;
+        int result = n + nn + nnn;
+        System.out.println("Result: " + n + " + " + nn + " + " + nnn + " = " + result);
+
+        scanner.close();
+
+    }
+}
+output:
+nter a number: 2
+Result: 2 + 22 + 222 = 246
+========================================================================================================================================================
+
